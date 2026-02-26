@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masaya Sakai - Portfolio</title>
+    <meta
+      name="description"
+      content="個人開発エンジニアのポートフォリオサイト。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <button class="theme-indicator" aria-label="Dark mode">
+      <span>☾</span>
+    </button>
+
+    <main>
+      <section class="hero section-pane">
+        <div class="container hero-inner">
+          <h1>Masaya Sakai</h1>
+          <p>Software Engineer</p>
+        </div>
+      </section>
+
+      <section class="about section-pane">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-grid">
+            <img
+              class="avatar"
+              src="./assets/profile.png"
+              alt="Masaya Sakai"
+              loading="lazy"
+            />
+            <div class="about-copy">
+              <p>普段はBtoB・BtoCのシステム開発をしているエンジニアです。</p>
+              <p>個人では「自分がほしい」と思ったものをアプリとして形にしています。</p>
+              <div class="chips">
+                <span>Java</span>
+                <span>Flutter</span>
+                <span>React</span>
+                <span>AWS</span>
+              </div>
+              <div class="social">
+                <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects-wrap section-pane">
+        <div class="container">
+          <h2 class="section-title projects-title">Projects</h2>
+          <div class="projects-grid">
+            <a href="./projects/oshi-app.html" class="project-card-link">
+              <article class="project-card">
+                <div class="card-top">
+                  <img
+                    class="app-icon"
+                    src="./assets/oshi-app-icon.png"
+                    alt="ライブ記録"
+                    loading="lazy"
+                  />
+                  <span class="badge badge-soon">In Progress</span>
+                </div>
+                <h3>ライブ記録 - oshi_app</h3>
+                <p>
+                  ライブ・コンサートの記録を簡単に残せるアプリ。セットリスト、写真、統計をまとめて管理。
+                </p>
+                <div class="tags">
+                  <span>ツール</span>
+                  <span>ライブ</span>
+                  <span>記録</span>
+                </div>
+                <span class="store-link">詳細を見る</span>
+              </article>
+            </a>
+
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <p>© <span id="year"></span> Masaya Sakai. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
