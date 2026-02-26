@@ -606,32 +606,6 @@ a.project-card-link {
   border-radius: 16px;
 }
 
-/* ── LP Tech Stack ── */
-
-.lp-tech {
-  border-top: 1px solid var(--divider);
-  padding: clamp(2rem, 5vw, 3.5rem) 0;
-}
-
-.lp-tech-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: center;
-}
-
-.lp-tech-chips span {
-  display: inline-flex;
-  align-items: center;
-  border: 1px solid var(--chip-border);
-  background: var(--chip-bg);
-  border-radius: 999px;
-  color: var(--chip-selected);
-  font-size: 0.8rem;
-  font-weight: 500;
-  padding: 0.35rem 0.75rem;
-}
-
 /* ── LP Store Links ── */
 
 .lp-store {
