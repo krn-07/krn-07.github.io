@@ -553,8 +553,9 @@ a.project-card-link {
 }
 
 .lp-feature-icon {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--accent);
+  font-size: 2rem;
   line-height: 1;
 }
 
