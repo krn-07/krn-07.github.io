@@ -30,3 +30,29 @@ if (yearEl) {
     localStorage.setItem(STORAGE_KEY, next);
   });
 })();
+
+// Scroll animations
+(() => {
+  const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (prefersReduced) return;
+
+  const els = document.querySelectorAll("[data-animate]");
+  if (!els.length) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  els.forEach((el, i) => {
+    el.style.transitionDelay = `${i * 80}ms`;
+    observer.observe(el);
+  });
+})();
