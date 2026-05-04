@@ -852,6 +852,16 @@ main {
   border-radius: 16px;
 }
 
+.lp-screenshot {
+  width: 100%;
+  aspect-ratio: 9 / 19.5;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow);
+  background: var(--card);
+}
+
 /* ── LP Store Links ── */
 
 .lp-store {
